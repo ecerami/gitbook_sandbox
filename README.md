@@ -157,6 +157,7 @@ The first four rows of the clinical data file contain tab-delimited metadata abo
 - Row 5: **The attribute name for the database**: This name should be in upper case.
 - Row 6: This is the first row that contains actual data.
 
+
 ### Example clinical header
 Below is an example of the first 4 rows with the respective metadata for the attributes defined in the 5th row. 
 ```
@@ -169,6 +170,7 @@ PATIENT_ID<TAB>OS_STATUS<TAB>OS_MONTHS<TAB>DFS_STATUS<TAB>DFS_MONTHS<TAB>...
 data - see examples below
 ....
 ```
+
 ### Clinical patient columns
 The file containing the patient attributes has one **required** column:
 - **PATIENT_ID (required)**: a unique patient ID. This field allows only numbers, letters, points, underscores and hyphens.
@@ -462,6 +464,7 @@ The stable_id for continuous RNA-seq data has two options: `rna_seq_mrna` or `rn
 <tr><td>CONTINUOUS</td><td>rna_seq_mrna_capture</td><td>data from Roche mRNA Capture Kit</td></tr>
 <tr><td>Z-SCORE</td><td>rna_seq_mrna_capture_Zscores</td><td>data from Roche mRNA Capture Kit</td></tr>
 </table>
+
 
 ### Example
 
@@ -917,6 +920,7 @@ genetic_alteration_type: CLINICAL
 datatype: TIMELINE
 data_filename: data_timeline_imaging.txt
 ```
+
 
 ### Data file
 Each event type requires its own data file, which contains all the events that each patient undergoes. The data format used for timeline data is extremely flexible. There are three required columns:
